@@ -27,3 +27,20 @@ export const RECOMMENDED_CONTENT = {
   p1: 'The most influential people on Facebook, Twitter, and Instagram are using TweetNow to schedule posts when their followers are most active.',
   p2: 'They generally receive 23% more engagement than people who do not.',
 }
+
+export const PRODUCTS_CONTENT = [
+  {
+    name: 'Unified Dashboard',
+    h1: 'Customizable dashboard for all platforms.',
+    p: 'Use Twitter nad Instagram but not LinkedIn? You can customize your dashboard to your liking. Tou can even schedule the dame post ot individual platforms instead of all platforms.',
+    buttonText: 'Start Scheduling',
+    isButton: true,
+  }, 
+  {
+    name: 'Enhanced Analytics',
+    h1: 'Real-time data that tells you everything.',
+    p: "Get detailed reports of what's working and what isn't. Engagement rates, impressions, views, and muh more data is available to you through our in-depth dashboard tool.",
+    buttonText: 'View Live Demo',
+    isButton: false
+  }
+]
