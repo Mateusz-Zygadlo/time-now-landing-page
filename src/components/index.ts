@@ -1,3 +1,6 @@
 export { Navbar } from './Navbar'
 export { Button } from './Button'
-export { Main } from './home'
+export {  
+  Main,
+  Recommended,
+} from './home'

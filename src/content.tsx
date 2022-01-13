@@ -9,6 +9,21 @@ export const MAIN_CONTENT = {
       image: Images.Shield,
       p: 'TimeNow does not sell your data. Learn more'
     }
-  ],
+  ]
+}
 
+export const RECOMMENDED_CONTENT = {
+  h1: 'TimeNow is used by the most influential people.',
+  users: [
+    Images.UA1,
+    Images.UA2,
+    Images.UA3,
+    Images.UA4,
+    Images.UA5,
+    Images.UA6,
+    Images.UA7,
+    Images.UA8,
+  ],
+  p1: 'The most influential people on Facebook, Twitter, and Instagram are using TweetNow to schedule posts when their followers are most active.',
+  p2: 'They generally receive 23% more engagement than people who do not.',
 }

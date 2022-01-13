@@ -1,7 +1,8 @@
 import React from 'react'
 import { 
   Navbar,
-  Main
+  Main,
+  Recommended
 } from '../components'
 
 export const Home = () => {
@@ -10,6 +11,7 @@ export const Home = () => {
       <Navbar />
       <div className="md:px-16 lg:px-24 px-5 mt-2">
         <Main />
+        <Recommended />
       </div>
     </div>
   )
