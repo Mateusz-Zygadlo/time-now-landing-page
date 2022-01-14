@@ -1,20 +1,19 @@
 import React from 'react'
 import { 
-  Navbar,
   Main,
   Recommended,
   Products,
-  Footer,
 } from '../components'
+import { useScrollToTop } from '../hooks'
 
 export const Home = () => {
+  useScrollToTop()
+  
   return(
-    <div className="w-full max-w-screen-2xl 2xl:mx-auto">
-      <Navbar />
+    <>
       <Main />
       <Recommended />
       <Products />
-      <Footer />
-    </div>
+    </>
   )
 }

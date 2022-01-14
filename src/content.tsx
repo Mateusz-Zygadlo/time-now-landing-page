@@ -44,3 +44,70 @@ export const PRODUCTS_CONTENT = [
     isButton: false
   }
 ]
+
+export const PLANS_CONTENT = {
+  h1: 'Flexible Plans for Everyone.',
+  p: "Our plans are made for everyone. Whether you're just starting out on social media, or have been on there for a long tome, we have a plan that's right for you.",
+  plans: [
+    {
+      time: 'month',
+      price: '$4',
+      p: "Perfect plan if you're jest starting out.",
+      functions: [
+        {
+          image: Images.Checkmark,
+          p: 'LinkedIn Integration'
+        },
+        {
+          image: Images.Checkmark,
+          p: 'Twitter Integration'
+        },
+        {
+          image: Images.Checkmark,
+          p: 'Real-time Analytics'
+        }
+      ],
+      buttonText: 'Subscribe Now'
+    },
+    {
+      time: 'month',
+      price: '$12',
+      p: "Perfect plan if you're a heavy user of social media.",
+      functions: [
+        {
+          image: Images.Checkmark,
+          p: 'LinkedIn Integration'
+        },
+        {
+          image: Images.Checkmark,
+          p: 'Twitter Integration'
+        },
+        {
+          image: Images.Checkmark,
+          p: 'Instagram Integration'
+        },
+        {
+          image: Images.Checkmark,
+          p: 'Real-time Analytics'
+        }
+      ],
+      buttonText: 'Subscribe Now'
+    },
+    {
+      time: 'month',
+      price: '$7',
+      p: "Perfect plan if you're jest starting out.",
+      functions: [
+        {
+          image: Images.Checkmark,
+          p: 'LinkedIn Integration'
+        },
+        {
+          image: Images.Checkmark,
+          p: 'Twitter Integration'
+        }
+      ],
+      buttonText: 'Subscribe Now'
+    }
+  ]
+}

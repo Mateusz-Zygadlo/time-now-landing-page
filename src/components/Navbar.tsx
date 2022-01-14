@@ -9,6 +9,7 @@ import {
   useWindowSize,
 } from '../hooks'
 import { MOBILE_WIDTH } from '../constants'
+import { Link } from 'react-router-dom'
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -24,17 +25,21 @@ export const Navbar = () => {
       className="sticky -top-1 md:px-16 lg:px-24 px-5 py-4 bg-white"
       ref={myRef}
     >
-      <div className="flex justify-between lg:justify-start relative">
-        <img 
-          src={Images.Logo}
-          alt="logo"
-          className="cursor-pointer"
-        />
+      <div className="flex justify-between lg:justify-start relative items-center">
+        <Link to='/'>
+          <img 
+            src={Images.Logo}
+            alt="logo"
+            className="cursor-pointer"
+          />
+        </Link>
         {width > MOBILE_WIDTH ? (
           <div className="flex justify-between w-full">
             <ul className="flex items-center ml-5">
               <li className="text-xl mx-3 cursor-pointer border-b hover:border-black transition-colors duration-300">Features</li>
-              <li className="text-xl mx-3 cursor-pointer border-b hover:border-black transition-colors duration-300">Pricing</li>
+              <Link to='/pricing'>
+                <li className="text-xl mx-3 cursor-pointer border-b hover:border-black transition-colors duration-300">Pricing</li>
+              </Link>
             </ul>
             <Button>Start Scheduling</Button>
           </div>
@@ -48,8 +53,10 @@ export const Navbar = () => {
             />
             <div className="flex flex-col items-center w-full">
               <ul className="flex flex-col items-center mb-5 pb-5 border-b">
-                <li className="text-4xl sm:text-5xl my-3 cursor-pointer">Features</li>
-                <li className="text-4xl sm:text-5xl my-3 cursor-pointer">Pricing</li>
+                <li className="text-4xl sm:text-5xl my-3 cursor-pointer" onClick={() => setIsOpen(false)}>Features</li>
+                <Link to='/pricing'>
+                  <li className="text-4xl sm:text-5xl my-3 cursor-pointer" onClick={() => setIsOpen(false)}>Pricing</li>
+                </Link>
               </ul>
               <Button>Start Scheduling</Button>
             </div>
